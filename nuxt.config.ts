@@ -23,5 +23,8 @@ export default defineNuxtConfig({
       'composables/*/index.{ts,js,mjs,mts}',  // 可配置层级及扫描文件名称和后缀
       'hooks/**', // 扫描所有文件
     ]
+  },
+  experimental: {
+    componentIslands: true
   }
 })
