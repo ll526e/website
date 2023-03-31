@@ -10,18 +10,18 @@ export default defineNuxtConfig({
   },
   components: [
     {
-      path: '~/components', // 指定目录
-      // prefix: 'Special', // 指定组件的前缀
-      // extensions: ['.vue'], // 限制自动导入的文件类型
-      // pathPrefix: false, // 组件名称的命名规则：是=>目录+文件名 否=>文件名
+      path: '~/components', // 指定目錄
+      // prefix: 'Special', // 指定組件的前綴
+      extensions: ['.vue'], // 限制自動導入的文件類型
+      // pathPrefix: false, // 組件名稱的命名規則：是=>目錄+文件名 否=>文件名
     },
     '~/t5-components',
   ],
   imports: {
     dirs: [
-      'composables',  // 仅仅扫描目录下的顶层文件
-      'composables/*/index.{ts,js,mjs,mts}',  // 可配置层级及扫描文件名称和后缀
-      'hooks/**', // 扫描所有文件
+      'composables',  // 僅僅掃描目錄下的頂層文件
+      'composables/*/index.{ts,js,mjs,mts}',  // 可配置層級及掃描文件名稱和後綴
+      'hooks/**', // 掃描所有文件
     ]
   },
   experimental: {
